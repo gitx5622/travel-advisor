@@ -19,4 +19,8 @@ export default makeStyles((theme) => ({
     list: {
         height: '75vh', overflow: 'auto',
     },
+    title: {
+        fontFamily: 'Quicksand',
+        fontWeight: 500,
+    }
 }));

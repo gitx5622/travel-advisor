@@ -7,13 +7,13 @@ import useStyles from "./styles";
 const Header = ({onLoad, onPlaceChanged}) => {
     const classes = useStyles();
     return (
-        <AppBar position="static">
+        <AppBar position="static" className={classes.appbar}>
             <Toolbar className={classes.toolbar}>
-                <Typography variant="h5" className={classes.title}>
+                <Typography variant="h4" className={classes.title}>
                 Travel Advisor
                 </Typography>
                 <Box display="flex">
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography variant="h6" className={classes.explore}>
                         Explore new places
                     </Typography>
                     <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>

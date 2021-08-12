@@ -1,7 +1,21 @@
 import { alpha, makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
+    appbar: {
+        backgroundColor: "lightblue",
+        color: "white",
+    },
     title: {
+        fontFamily: 'Quicksand',
+        fontWeight: 600,
+        display: 'none',
+        [theme.breakpoints.up('sm')]: {
+            display: 'block',
+        },
+    },
+    explore: {
+        fontFamily: 'Quicksand',
+        fontWeight: 600,
         display: 'none',
         [theme.breakpoints.up('sm')]: {
             display: 'block',

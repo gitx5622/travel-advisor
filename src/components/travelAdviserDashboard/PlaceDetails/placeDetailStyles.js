@@ -10,4 +10,8 @@ export default makeStyles(() => ({
     spacing: {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     },
+    title: {
+        fontFamily: 'Quicksand',
+        fontWeight: 500,
+    }
 }));

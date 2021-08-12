@@ -16,7 +16,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
                 title={place.name}
             />
             <CardContent>
-                <Typography gutterBottom variant="h5">{place.name}</Typography>
+                <Typography gutterBottom variant="h5" className={classes.title}>{place.name}</Typography>
                 <Box display="flex" justifyContent="space-between" my={2}>
                     <Rating name="read-only" value={Number(place.rating)} readOnly />
                     <Typography component="legend">{place.num_reviews} review{place.num_reviews > 1 && 's'}</Typography>
