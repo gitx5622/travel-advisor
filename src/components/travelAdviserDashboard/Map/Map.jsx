@@ -15,7 +15,7 @@ const Map = ({coordinates, setCoordinates, setBounds, places, setChildClicked}) 
             defaultCenter={coordinates}
             center={coordinates}
             defaultZoom={14}
-            margin={[50, 50,  50, 50]}
+            margin={[50, 50,  50, 0]}
             options={''}
             onChange={(e) => {
                 setCoordinates({ lat:  e.center.lat, lng: e.center.lng });

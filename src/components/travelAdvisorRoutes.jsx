@@ -23,7 +23,7 @@ const TravelAdvisorRoutes = ({ location }) => {
                     <div>
                         <Route
                             exact
-                            path="/:dashboard_route"
+                            path="/"
                             render={() => (
                                 <TravelAdviserDashboard/>
                             )}
