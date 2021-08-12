@@ -23,7 +23,7 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
-        const filtered = places.filter((place) => Number(place.rating) > rating);
+        const filtered = places?.filter((place) => Number(place.rating) > rating);
         setFilteredPlaces(filtered);
     }, [places, rating]);
 
@@ -67,7 +67,7 @@ const Home = () => {
                     setCoordinates={setCoordinates}
                     setBounds={setBounds}
                     coordinates={coordinates}
-                    places={filteredPlaces.length ? filteredPlaces : places}
+                    places={filteredPlaces?.length ? filteredPlaces : places}
                     setChildClicked={setChildClicked}
                 />
                 </Grid>
